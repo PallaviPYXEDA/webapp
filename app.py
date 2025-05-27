@@ -5,15 +5,6 @@ import pickle
 
 MODEL_NAME = "f365e660-4f40-43c8-b2a0-7c1f00245f28"
 
-@st.cache_resource
-def load_model(model_name):
-    with open(model_name, "rb") as file_name:
-        return pickle.load(file_name)
-
-
-#load the model
-tabular_model = load_model(MODEL_NAME)
-
 #creating the web app
 
 #title
